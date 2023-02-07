@@ -1,11 +1,18 @@
 module.exports = {
-  purge: ['./pages/**/*.js', './components/**/*.js'],
+  purge: {
+    enable: process.env.NODE_ENV === "production",
+    content: [
+      "./pages/**/*.js",
+      "./components/**/*.js,",
+      "./app/**/*.{html,js}",
+    ],
+  },
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {}
+    extend: {},
   },
   variants: {
-    extend: {}
+    extend: {},
   },
-  plugins: []
+  plugins: [],
 };
