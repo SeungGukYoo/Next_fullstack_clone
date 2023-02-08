@@ -1,4 +1,4 @@
-import Link from "next/Link";
+import Link from "next/link";
 import Proptypes from "prop-types";
 const Comments = ({ comment }) => {
   console.log(comment);
