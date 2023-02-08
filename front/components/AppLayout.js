@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 
 import UserProfile from "./UserProfile";
-import Loginform from "./Loginform";
+import LoginForm from "./LoginForm";
 import { useSelector } from "react-redux";
 import useInput from "../hooks/useInput";
 import { useCallback } from "react";
@@ -56,7 +56,7 @@ const AppLayout = ({ children }) => {
         </li>
       </ul>
       <div className="grid xl:grid-cols-4 xl:gap-4 sm:gap-0 ">
-        <div className="p-8 ">{me ? <UserProfile /> : <Loginform />}</div>
+        <div className="p-8 ">{me ? <UserProfile /> : <LoginForm />}</div>
         <div className="col-span-2">{children}</div>
         <div>
           <a

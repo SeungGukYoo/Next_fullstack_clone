@@ -7,7 +7,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { LOG_IN_REQUEST } from "../action";
 import { useEffect } from "react";
 
-const Loginform = () => {
+const LoginForm = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const dispatch = useDispatch();
@@ -103,4 +103,4 @@ const Loginform = () => {
   );
 };
 
-export default Loginform;
+export default LoginForm;
